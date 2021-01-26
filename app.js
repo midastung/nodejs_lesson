@@ -8,6 +8,6 @@ app.listen(port, ()=>{                              //聽port位址
     console.log("Listen on port:" + '3000');
 });
 
-app.set('views', './views');        //設定view位置
-app.set('view engine', 'ejs');      //範本檔設定
+app.set('views', './views');        //範本檔所在的目錄
+app.set('view engine', 'ejs');      //要使用的範本引擎
 app.use('/', dlsIndex);             //網址位址

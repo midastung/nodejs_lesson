@@ -8,7 +8,7 @@ exports.member = async(req, res) =>{
     let memberId = getList[i].Member_id;
     let memberName = getList[i].Member_name;  
     let memberPhone = getList[i].Member_phone;    
-    memberList.push({memberId:memberId, memberName:memberName, memberPhone:memberPhone})
+    memberList.push({ memberId: memberId, memberName: memberName, memberPhone: memberPhone})
   }
   return memberList;
 }
