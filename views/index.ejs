@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./public/js/getdata.js" defer="defer"></script>   <!--網站載入完才執行-->
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!--index.css-->
+    <link href="./public/css/index.css" rel="stylesheet">
 </head>
 <body>
-    <p>hello world~~</p>
-    <%= memberList[0].memberId  %>
-    <%= memberList[0].memberName %>
-    <%= memberList[0].memberPhone %>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">立勝</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary"> 專案管控</button>   
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">產品資料庫廠商</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">產品資料庫庫存</button>  
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">人員管理</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">客戶名稱</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">操作記錄</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card indexButton">
+                    <button type="button" class="btn btn-outline-primary">資料控制</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
