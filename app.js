@@ -5,6 +5,7 @@ const api = require('./routers/api');
 const config = require('config');
 const port = config.get('app.port');
 
+
 app.listen(port, ()=>{                              //聽port位址
     console.log("Listen on port:" + '3000');
 });

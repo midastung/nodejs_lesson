@@ -13,4 +13,4 @@ $(() => {
 
     )
 });
-console.log(getdata.data);
+//console.log(getdata.data);

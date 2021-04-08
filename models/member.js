@@ -4,6 +4,7 @@ const query = db.query;
 exports.member = async(req, res) =>{
   let memberList = [];
   let getList = await query('SELECT Member_id, Member_name, Member_phone from MEMBER');
+  console.log(getList);
   for (let i = 0; i < getList.length; i++) {
     let memberId = getList[i].Member_id;
     let memberName = getList[i].Member_name;  
